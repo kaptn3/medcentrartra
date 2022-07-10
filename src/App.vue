@@ -3,25 +3,32 @@
     <header-wrap/>
     <main-content/>
     <block2-service/>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-
+    <block3-about/>
+    <block4-problems/>
+    <block5-specialists/>
+    <block6-promo/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import headerWrap from './components/header-wrap';
 import mainContent from "@/components/mainContent";
 import block2Service from "@/components/mainBlock/block2-service";
+import block3About from "@/components/mainBlock/block3-about";
+import block4Problems from "@/components/mainBlock/block4-problems";
+import block5Specialists from "@/components/mainBlock/block5-specialists";
+import block6Promo from "@/components/mainBlock/block6-promo";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     headerWrap,
     mainContent,
-    block2Service
-
+    block2Service,
+    block3About,
+    block4Problems,
+    block5Specialists,
+    block6Promo
   }
 }
 </script>
@@ -44,7 +51,6 @@ export default {
   margin: 0;
   padding: 0;
 }
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
